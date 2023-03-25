@@ -100,7 +100,12 @@ function toupper() {
 function generateMacAddress() {
 
     #toupper "Mac Address: 00:11:32:$(randomhex):$(randomhex):$(randomhex)"
-    printf '00:11:32:%02X:%02X:%02X' $((RANDOM % 256)) $((RANDOM % 256)) $((RANDOM % 256))
+    if [ "$1" = "DS923+" ] || [ "$1" = "DS1522+" ] || [ "$1" = "RS4021xs+" ]; then
+        # DS1522+ and DS923+ Mac starts with 90:09:d0
+        printf '90:09:d0:%02X:%02X:%02X' $((RANDOM % 256)) $((RANDOM % 256)) $((RANDOM % 256))
+    else
+        printf '00:11:32:%02X:%02X:%02X' $((RANDOM % 256)) $((RANDOM % 256)) $((RANDOM % 256))
+    fi
 
 }
 
@@ -169,9 +174,9 @@ function showhelp() {
 $(basename ${0})
 
 ----------------------------------------------------------------------------------------
-Usage: ${0} <platform>
+Usage: ${0} <model>
 
-Available platforms :
+Available models :
 ----------------------------------------------------------------------------------------
 DS916+ DS918+ DS920+ DS923+ DS1520+ DS1621+ DS2422+ DS3615xs DS3617xs DS3622xs+ DVA1622 DVA3219 DVA3221 FS6400 RS4021xs+
 
