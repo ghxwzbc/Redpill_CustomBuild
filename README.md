@@ -39,8 +39,8 @@ version          | √    |-               | 请选择你需要编译的版本. 
 jun              | √    |1               | 请选择是否以jun模式编译.  
 lkm              | ×    |-               | 如不了解请保持默认, 请选择 LKM 版本.(目前具体有何区别不详, 如无必要选默认的 redpill).  
 config           | ×    |-               | 如不了解请保持默认, 设置默认 user_config.json <sup>[①]()</sup>
-maxdisks         | ×    |-               | 如不了解请保持默认, 请输入最大硬盘数 maxdisks. 默认: 无, 范围: 1~32  
-maxlanport       | ×    |7               | 如不了解请保持默认, 请输入最大网卡索引 maxlanport. 默认: 7, 范围: 0~31  
+maxdisks         | ×    |-               | 如不了解请保持默认, 请输入最大硬盘数 maxdisks. 默认: 无, 范围: 1~26  
+maxlanport       | ×    |7               | 如不了解请保持默认, 请输入最大网卡索引 maxlanport. 默认: 8, 范围: 1~8  
 internalportcfg  | ×    |"0xffff"        | 如不了解请保持默认, 请输入sata接口配置 internalportcfg(十六进制数). <sup>[④]()</sup> 默认: 0xffff  
 esataportcfg     | ×    |-               | 如不了解请保持默认, 请输入esata接口配置 esataportcfg(十六进制数). <sup>[④]()</sup> 默认: 无  
 usbportcfg       | ×    |-               | 如不了解请保持默认, 请输入usb接口配置 usbportcfg(十六进制数). <sup>[④]()</sup> 默认: 无  
@@ -130,7 +130,10 @@ ext3rds          | ×    |-               | 请输入需要集成的其他驱动
     
 
 ## 打赏一下🍻
-* > ### 作者: Ing  交流群 QQ群: [21609194](https://qm.qq.com/cgi-bin/qm/qr?k=8AU8VJ82OR2HB_77g3vsjGKA-rm-p67B&jump_from=webapi)  TG: [https://t.me/Redpill_CustomBuild](https://t.me/Redpill_CustomBuild)  
+* > ### 作者: Ing  
+* > QQ群: 21609194 (已解散)
+* > QQ频道: redpill2syno [点击链接加入QQ频道](https://pd.qq.com/s/5nmli9qgn)
+* > TG频道: redpill2syno [点击链接加入TG频道](https://t.me/redpill2syno)
 * <div><img src="https://raw.githubusercontent.com/wjz304/wjz304/master/my/20220908134226.jpg" width="500"></div>  
 
 
